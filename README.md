@@ -13,7 +13,7 @@ Will convert the example.dinamo file in this repository into MEME motif format a
 
 The DiNAMO-formatted file can contain an arbitrary number of motifs, even just one!
 
-To execute this script on a batch of dinamo files (file1, file2, ... etc. :
+To execute this script on a batch of dinamo files (file1, file2, ... etc.):
 
 ```
 for file in file1, file2, file3, ...
