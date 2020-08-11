@@ -3,6 +3,10 @@ Use regular expressions to convert the motifs output by DiNAMO into true MEME mo
 
 [DiNAMO](https://github.com/bonsai-team/DiNAMO) is a relatively new and wonderful motif-finding algorithm. It's super easy to use, but outputs its results in a pseudo-MEME motif format that is not compatible with MEME suite tools (the most popular tools for motif analysis). This script uses simple regular expressions to convert the DiNAMO output into a true MEME format that is compatible with MEME v5.1.1 software.
 
+## IMPORTANT NOTE
+
+This script will automatically assign a site count of 1 and an e-value of zero to all DiNAMO motifs in the input file. This isn't a huge deal as long as your MEME tools aren't filtering input motifs by their e-value (most don't) and you have direct control over the pseudocounts applied to the MEME motif matricies, which you can do from the command line version of MEME. In most cases, these placeholder values shouldn't affect your results.
+
 ## USAGE
 
 The script has three required arguments -i, -o, and -l. -i will be the name of the file containing DiNAMO-formatted motifs, -o denotes the name you want for the output file containing MEME-motif formats, and -l denotes the length/width of the motifs in the DiNAMO output file. The current version of DiNAMO only outputs motifs of a given length, so this value should be the same for every motif in the file. For example:
