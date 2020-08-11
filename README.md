@@ -7,7 +7,7 @@ Use regular expressions to convert the motifs output by DiNAMO into true MEME mo
 
 The script has three required arguments -i, -o, and -l. -i will be the name of the file containing DiNAMO-formatted motifs, -o denotes the name you want for the output file containing MEME-motif formats, and -l denotes the length/width of the motifs in the DiNAMO output file. The current version of DiNAMO only outputs motifs of a given length, so this value should be the same for every motif in the file. For example:
 
-`./dinamo_to_meme.bash -i example.dinamo -o example.meme -l 7`
+`./dinamo_to_meme.bash -i example.dinamo.txt -o example.meme.txt -l 7`
 
 Will convert the example.dinamo file in this repository into MEME motif format and save the results to example.meme. This file can then be directly uploaded to any of the online [MEME suite tools](http://meme-suite.org/index.html) or input into the command line versions of the MEME tools.
 
